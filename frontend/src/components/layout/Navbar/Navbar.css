@@ -1,0 +1,19 @@
+/* navbar css for the navbar */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+
+/* Path: frontend/src/components/layout/Navbar/Navbar.js */
