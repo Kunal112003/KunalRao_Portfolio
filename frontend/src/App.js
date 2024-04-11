@@ -9,8 +9,9 @@ import ContactPage from './components/pages/ContactPage/ContactPage';
 import ResumePage from './components/pages/ResumePage/ResumePage';
 import ExperiencePage from './components/pages/ExperiencePage/ExperiencePage';
 import Navbar from './components/layout/Navbar/Navbar';
-import Footer from './components/layout/Footer/Footer';
-import Header from './components/layout/Header/Header';
+// import Footer from './components/layout/Footer/Footer';
+// import Header from './components/layout/Header/Header';
+
 
 
 
@@ -18,17 +19,19 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
-        </Routes>
-        <Footer />
+        <div className="navbar-container">
+          <Navbar />
+        </div>
+        <div className="routes-container">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );

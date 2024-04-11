@@ -1,19 +1,55 @@
-/* navbar css for the navbar */
-
 .navbar {
-  background-color: #333;
-  color: white;
-  padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /* Changed from space-around */
+align-items: center;
+background-color: black;
+color: white;
+/* padding:  */
+height: 100vh;
+width: 200px;
+position: fixed;
+left: 0;
+top: 0;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
+.navbar-logo {
+margin-bottom: 20px; /* Added space below the logo */
+
 }
 
-.navbar a:hover {
-  color: #f1f1f1;
+.nav-link {
+    list-style-type: none; /* Remove bullet points */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 15px; /* Increased bottom margin */
+    padding-top: 30px; /* Added space above text */
+    padding-right: 45px; /* Added space to the right of text */
+    /* padding-bottom: 30px; Added space below text */
+    /* padding-left: 45px; Added space to the left of text */
+    display: block; /* Make the entire block clickable */
+    text-align: center; /* Center text */
+
+
 }
 
+.active {
+font-weight: bold; /* Highlight active link */
+}
 
-/* Path: frontend/src/components/layout/Navbar/Navbar.js */
+/* font of text */
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+
+.nav-item {
+    list-style-type: none; /* Remove bullet points */
+    margin-bottom: 15px; /* Add space below each item */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    /* padding-top: 20px; Add space above text */
+}
+
