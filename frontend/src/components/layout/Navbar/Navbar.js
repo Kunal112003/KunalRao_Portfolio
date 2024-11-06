@@ -1,53 +1,55 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
+// import { useState } from "react";
 
 const Navbar = () => {
+  // const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setShowMenu(!showMenu);
+  // };
+
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
-        <ol className="navbar-logo">
-          <NavLink to="/" className="nav-link">
-            <span className="link-text logo-text">K</span>
-          </NavLink>
-        </ol>
-
-        <ol className="nav-item">
-          <NavLink to="/" className="nav-link">
+        <li className="nav-item">
+          <NavLink to="/" className="nav-link" activeClassName="active" end>
             Home
           </NavLink>
-        </ol>
-        <ol className="nav-item">
-          <NavLink to="/about" className="nav-link">
+        </li>
+        <li className="nav-item">
+          <NavLink to="/about" className="nav-link" activeClassName="active">
             About
           </NavLink>
-        </ol>
-        <ol className="nav-item">
-          <NavLink to="/projects" className="nav-link">
+        </li>
+        <li className="nav-item">
+          <NavLink to="/projects" className="nav-link" activeClassName="active">
             Projects
           </NavLink>
-        </ol>
-        <ol className="nav-item">
-          <NavLink to="/contact" className="nav-link">
+        </li>
+        <li className="nav-item">
+          <NavLink to="/contact" className="nav-link" activeClassName="active">
             Contact
           </NavLink>
-        </ol>
-        <ol className="nav-item">
-          <NavLink to="/resume" className="nav-link">
+        </li>
+        <li className="nav-item">
+          <NavLink to="/resume" className="nav-link" activeClassName="active">
             Resume
           </NavLink>
-        </ol>
-        <ol className="nav-item">
-          <NavLink to="/experience" className="nav-link">
+        </li>
+        <li className="nav-item">
+          <NavLink to="/experience" className="nav-link" activeClassName="active">
             Experience
           </NavLink>
-        </ol>
-
+        </li>
       </ul>
     </nav>
-
   );
-};
+
+
+    
+}
 
 export default Navbar;

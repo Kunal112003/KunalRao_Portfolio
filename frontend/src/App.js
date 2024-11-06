@@ -13,27 +13,24 @@ import Navbar from './components/layout/Navbar/Navbar';
 // import Header from './components/layout/Header/Header';
 
 
-
-
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <div className="navbar-container">
-          <Navbar />
-        </div>
-        <div className="routes-container">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/resume" element={<ResumePage />} />
-            <Route path="/experience" element={<ExperiencePage />} />
-          </Routes>
-        </div>
-      </Router>
-    </div>
+    <Router>
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="fragment">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+        </Routes>
+      </div>
+      {/* <Footer /> */}
+    </Router>
   );
 }
 
